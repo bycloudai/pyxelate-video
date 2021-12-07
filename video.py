@@ -41,12 +41,15 @@ if __name__ == "__main__":
 		# print(filename)
 
 	count = 0
+	first = True
 	for filename in os.listdir("temp"):
 		clean_filename = ".".join(filename.split(".")[:-1])
 
 		if (filename.endswith(".png")):
 			image = io.imread("temp/" + filename)
-			pyx.fit(image)
+			if first:
+				pyx.fit(image)
+				first = False
 			new_image = pyx.transform(image)
 			io.imsave("temp_output/"+clean_filename+".png", new_image)
 			count += 1
