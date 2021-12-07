@@ -26,7 +26,8 @@ if __name__ == "__main__":
 
 	downsample_by = args.downsample_by
 	palette = args.palette
-	print(downsample_by, palette)
+	pyx = Pyx(factor=downsample_by, palette=palette)
+
 
 	for filename in os.listdir("input"):
 		video = cv2.VideoCapture("input/" + filename)
