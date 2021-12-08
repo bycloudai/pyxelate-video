@@ -30,9 +30,8 @@ if __name__ == "__main__":
 
 
 	for filename in os.listdir("input"):
-		video = cv2.VideoCapture("input/" + filename)
-		fps = video.get(cv2.CAP_PROP_FPS)
-		# print(fps, filename)
+			video = cv2.VideoCapture("input/" + filename)
+			fps = video.get(cv2.CAP_PROP_FPS)
 		if (filename.endswith(".mp4")): #or .avi, .mpeg, whatever.
 			clean_filename = ".".join(filename.split(".")[:-1])
 			os.system("ffmpeg -i {0} -vf fps={1} temp/{2}%d.png".format("input/"+filename, fps, clean_filename))
