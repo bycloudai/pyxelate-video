@@ -31,7 +31,7 @@ pyx = Pyx(factor=downsample_by, palette=palette)
 
 video_location = args.input # input/csgo.mp4
 if "/" in video_location:
-	video_file = "".join(args.input.split("/")[1:]) # csgo.mp4
+	video_file = "".join(args.input.split("/")[-1:]) # csgo.mp4
 else:
 	video_file = video_location
 video_filename = ".".join(video_file.split(".")[:-1]) # csgo
