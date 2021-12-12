@@ -58,7 +58,7 @@ for filename in os.listdir("temp"):
 	print(clean_filename, "frame: "+str(count), "done")
 
 for filename in os.listdir("temp_output"):
-	os.system("ffmpeg -i {0} -vf \"fps={1},pad=ceil(iw/2)*2:ceil(ih/2)*2\" -c:v libx264 -pix_fmt yuv420p output/{2}_output.mp4".format("temp_output/"+video_filename+"%d.png", fps, video_filename))
+	os.system("ffmpeg -i {0} -vf \"fps={1},pad=ceil(iw/2)*2:ceil(ih/2)*2\" -c:v libx264 -pix_fmt yuv420p output/{2}_output_d{3}_p{4}.mp4".format("temp_output/"+video_filename+"%d.png", fps, video_filename,str(downsample_by),str(palette)))
 	break
 
 shutil.rmtree('temp')

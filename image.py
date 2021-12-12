@@ -27,4 +27,5 @@ pyx.fit(image)
 new_image = pyx.transform(image)
 
 # save new image with 'skimage.io.imsave()'
-io.imsave("output/"+"".join("".join(args.input.split("/")[1:]).split(".")[:1])+".png", new_image)
+io.imsave("output/"+"".join("".join(args.input.split("/")[-1:]).split(".")[:1])+"_d"+str(downsample_by)+"_p"+str(palette)+".png", new_image)
+
