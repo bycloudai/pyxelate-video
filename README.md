@@ -26,7 +26,7 @@ Step 2. Install the dependencies
 ```
 cd WHERE_YOU_CLONED_THIS_REPO
 pip install -r requirements.txt
-pip install ffmpeg-python
+conda install -c conda-forge ffmpeg
 ```
 - *To reuse the created conda environment after you close the prompt, you just need to*:
 ```
