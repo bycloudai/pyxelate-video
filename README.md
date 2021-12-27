@@ -22,19 +22,7 @@ Step 1. Create conda environment:
 conda create -n pyxelate python=3.7
 conda activate pyxelate
 ```
-Step 2-1. Setup conda env for nvidia non-30 series GPU:
-```
-conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
-```
-Step 2-2. Setup conda env for nvidia 30 series GPU:
-```
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-```
-Step 2-3. Setup conda env for non-nvidia GPU: (Running on CPU)
-```
-conda install pytorch torchvision torchaudio cpuonly -c pytorch
-```
-Step 3. Install the dependencies
+Step 2. Install the dependencies
 ```
 cd WHERE_YOU_CLONED_THIS_REPO
 pip install -r requirements.txt
