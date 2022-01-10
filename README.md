@@ -4,7 +4,7 @@
 
 Super Pyxelate converts images to 8-bit pixel art. It is an improved, faster implementation of the [original Pyxelate](https://github.com/sedthh/pyxelate/releases/tag/1.2.1) algorithm with palette transfer support and enhanced dithering. Or you can find the original version of pyxelate [here](https://github.com/sedthh/pyxelate).
 
-This is an implemented version where you can convert **videos** and images into "pixel art". Follow this YouTube [tutorial](https://youtu.be/uCTa4NUSwBs) or if you have any questions feel free to join my [discord](https://discord.gg/sE8R7e45MV) and ask there.
+This is an implemented version where you can convert **videos** and images into "pixel art". Follow this YouTube [tutorial](https://youtu.be/xWDe526RJcQ) or if you have any questions feel free to join my [discord](https://discord.gg/sE8R7e45MV) and ask there.
 
 ![Pixel art corgi](/examples/p_corgi.png)
 
